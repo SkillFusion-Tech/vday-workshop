@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="navbar-container"></div>
+
+    <div class="container">
+      <!-- Your other page content here -->
+    </div>
+
+    <script>
+      // Fetch the navbar HTML and insert it dynamically
+      fetch("../components/navbar.html")
+        .then((res) => res.text())
+        .then((data) => {
+          document.getElementById("navbar-container").innerHTML = data;
+        })
+        .catch((error) => console.error("Error loading navbar:", error));
+    </script>
+    <style>
+      #navbar-container {
+        background-color: #ff93a9;
+        margin: 0%;
+      }
+    </style>
+  </body>
+</html>

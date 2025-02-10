@@ -1,5 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
   const noBtn = document.getElementById("no-btn");
+  const yesBtn = document.getElementById("yes-btn");
 
   function moveButton() {
     const x = Math.random() * (400 - noBtn.offsetWidth);
@@ -10,5 +11,9 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   noBtn.addEventListener("mouseover", moveButton);
-  noBtn.addEventListener("touchstart", moveButton); // Added support for mobile touch
+  noBtn.addEventListener("touchstart", moveButton);
+
+  yesBtn.addEventListener("click", () => {
+    window.location.href = "pages/home.html";
+  });
 });
