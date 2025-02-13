@@ -3,7 +3,11 @@
   src: url(fonts/lucy.ttf);
 }
 
+<<<<<<< HEAD
 .homebody {
+=======
+body {
+>>>>>>> 1ba722a (Initial commit)
   display: flex;
   justify-content: center;
   align-items: center;
@@ -17,6 +21,13 @@
   user-select: none;
 }
 
+<<<<<<< HEAD
+=======
+#valentine-page {
+  height: 100vh;
+}
+
+>>>>>>> 1ba722a (Initial commit)
 #background-video {
   position: fixed;
   top: 0;
@@ -31,9 +42,18 @@
 
 .container {
   text-align: center;
+<<<<<<< HEAD
   position: relative;
   z-index: 1;
   color: #fff;
+=======
+  z-index: 1;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+>>>>>>> 1ba722a (Initial commit)
 }
 
 .overlay {
@@ -44,6 +64,10 @@
 }
 
 .card {
+<<<<<<< HEAD
+=======
+  position: relative;
+>>>>>>> 1ba722a (Initial commit)
   background-color: #fdf0f0;
   padding: 40px;
   border-radius: 20px;
@@ -81,6 +105,14 @@ button {
   transition: transform 1s ease;
 }
 
+<<<<<<< HEAD
+=======
+button a {
+  text-decoration: none;
+  color: #fff;
+}
+
+>>>>>>> 1ba722a (Initial commit)
 button:hover {
   transform: scale(1.1);
 }
@@ -132,6 +164,7 @@ button:hover {
   }
 }
 
+<<<<<<< HEAD
 /* .card::before {
   content: "💝";
   font-size: 60px;
@@ -141,6 +174,8 @@ button:hover {
   animation: heartBeat 1s infinite;
 } */
 
+=======
+>>>>>>> 1ba722a (Initial commit)
 .img-container {
   display: flex;
   justify-content: center;
@@ -153,3 +188,158 @@ button:hover {
 #navbar-container {
   background-color: #ff93a9;
 }
+<<<<<<< HEAD
+=======
+
+.hidden {
+  display: none !important;
+}
+
+nav {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 20px 0;
+  background-color: #fc809942;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+
+.nav-btn {
+  margin: 5px;
+  padding: 10px;
+  background-color: transparent;
+  color: #ff5c5c;
+  border: none;
+  cursor: pointer;
+  font-family: "Pangolin", serif;
+  font-size: 24px;
+}
+
+.content-section {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+  font-size: 24px;
+}
+
+.profile-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.profile img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+}
+.heart {
+  font-size: 24px;
+  color: red;
+}
+.countdown-section {
+  margin-top: 20px;
+  font-size: 24px;
+  color: #d63384;
+}
+.days {
+  font-size: 32px;
+  font-weight: bold;
+}
+.progress-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+.progress-bar {
+  width: 200px;
+  height: 10px;
+  background-color: #e0e0e0;
+  border-radius: 5px;
+  overflow: hidden;
+}
+#progress {
+  height: 100%;
+  background-color: #ff4081;
+  width: 0%;
+}
+
+.countdown-container {
+  font-family: "Pangolin", serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 300px;
+  gap: 10;
+}
+
+.profile-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.profile img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+.profile p {
+  text-align: center;
+  color: #ff5c5c;
+}
+.heart {
+  font-size: 24px;
+  color: red;
+}
+.countdown-section {
+  margin-top: 20px;
+  font-size: 24px;
+  color: #d63384;
+  text-align: center;
+}
+.days {
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.puzzle {
+  display: grid;
+  grid-template-columns: repeat(3, 100px);
+  grid-template-rows: repeat(3, 100px);
+  gap: 2px;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+}
+
+.puzzle-piece {
+  width: 100px;
+  height: 100px;
+  background-size: 300px 300px;
+  cursor: pointer;
+  border: 2px solid #fff;
+  transition: transform 0.2s ease;
+}
+
+.shuffle-btn {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #ff1493;
+  color: #fff;
+  border: none;
+  font-size: 1.2em;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.shuffle-btn:hover {
+  background-color: #e5007f;
+}
+>>>>>>> 1ba722a (Initial commit)

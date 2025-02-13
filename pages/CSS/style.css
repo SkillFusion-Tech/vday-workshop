@@ -1,0 +1,232 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+html, body {
+    overflow: hidden;
+}
+
+@font-face {
+  font-family: Bebas;
+  src: url(../fonts/BebasNeue-Regular.otf);
+}
+
+body {
+    margin: 0;
+    position: absolute;
+    width: 100%;
+	  height: 100%;
+}
+
+.nav {
+  display: flex;
+}
+
+.nav ul {
+  display: flex;
+  position: absolute;
+  color: #FFF;
+  top: 50%;
+  left: 50%;
+  text-decoration: none;
+  list-style: none;
+  font-size: 2em;
+  font-family: Bebas;
+  transform: translate(-50%, -50%);
+}
+
+.nav a {
+  text-decoration: none;
+  color: #FFF;
+  transition: 0.5s all ease-in-out;
+}
+
+.nav a:hover {
+  color: gold;
+}
+
+.nav li {
+  margin: 20px;
+}
+
+.card {
+  width: auto;
+  background-color: pink;
+  border-radius: 15px;
+  padding: 20px;
+  border: 5px solid #FFF;
+}
+
+.card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 7px;
+}
+
+.card h3 {
+  text-align: center;
+  font-weight: normal;
+  color: #717171;
+}
+
+canvas {
+    width: 100%;
+    height: 100%;
+}
+
+h1 {
+    text-align: center;
+    font-family: Poppins;
+    color: #FFF;
+    cursor: pointer;
+}
+
+.container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+/* Slideshow container */
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+  }
+  
+  /* Caption text */
+  .text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    font-family: Poppins;
+    text-align: center;
+  }
+  
+  /* The dots/bullets/indicators */
+  .dot {
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: none;
+    transition: background-color 0.6s ease;
+  }
+
+    .mySlides img {
+        width: 500px;
+        height: 300px;
+        object-fit: cover;
+        border-radius: 7px;
+    }
+  
+  .active {
+    background-color: #717171;
+  }
+  
+  /* Fading animation */
+  .fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+
+  .back {
+    position: fixed;
+    top: 3%;
+    left: 2%;
+  }
+
+  .back button {
+    background-color: #00061E;
+    outline: none;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    line-height: 45px;
+    font-size: 1.7em;
+    color: #fff;
+    transition: all ease-in-out 0.5s;
+  }
+
+  .back button:hover {
+    background-color: #fff;
+    outline: none;
+    border: 2px solid #00061E;
+    border-radius: 50%;
+    width: 50px;
+    height: 50%;
+    cursor: pointer;
+    line-height: 45px;
+    font-size: 1.7em;
+    color: #000;
+  }
+  
+  /* On smaller screens, decrease text size */
+  @media only screen and (max-width: 992px) {
+    .text {font-size: 11px}
+
+    .mySlides img {
+        width: 250px;
+        height: 150px;
+    }
+
+    h1 {
+        font-size: 0.8rem;
+    }
+
+    .back {
+      position: fixed;
+      top: 3%;
+      left: 4%;
+    }
+  
+    .back button {
+      background-color: #00061E;
+      outline: none;
+      width: 30px;
+      height: 30px;
+      cursor: pointer;
+      line-height:25px;
+      font-size: 1em;
+      color: #fff;
+      transition: all ease-in-out 0.5s;
+    }
+
+    
+    .nav ul {
+      display: block;
+      position: absolute;
+      color: #FFF;
+      text-decoration: none;
+      list-style: none;
+      font-size: 2em;
+      font-family: Bebas;
+      left: 0;
+      top: 35%;
+    }
+    
+    .nav a {
+      text-decoration: none;
+      color: #FFF;
+      transition: 0.5s all ease-in-out;
+    }
+    
+    .nav a:hover {
+      color: gold;
+    }
+    
+    .nav li {
+      margin: 20px;
+    }
+    
+  }

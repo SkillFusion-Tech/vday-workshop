@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Love</title>
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body>
+  <div class="back">
+    <a href="../index.html">
+      <button>&#11164;</button>
+    </a>
+  </div>
+    <div class="nav">
+      <ul>
+        <li>
+          <a href="content03.html">
+            <div class="card">
+              <img src="img/imeg.gif" alt="">
+              <h3>Images</h3>
+            </div>
+          </a>
+        </li>
+        <li>
+          <a href="content02.html">
+            <div class="card">
+              <img src="img/song.gif" alt="">
+              <h3>Song</h3>
+            </div>
+          </a>
+        </li>
+        <li>
+          <a href="content04.html">
+            <div class="card">
+              <img src="img/letter.gif" alt="">
+              <h3>Letter</h3>
+            </div>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <canvas></canvas>
+  
+    <script>
+        let slideIndex = 0;
+        showSlides();
+        
+        function showSlides() {
+          let i;
+          let slides = document.getElementsByClassName("mySlides");
+          let dots = document.getElementsByClassName("dot");
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+          }
+          slideIndex++;
+          if (slideIndex > slides.length) {slideIndex = 1}    
+          for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";  
+          dots[slideIndex-1].className += " active";
+          setTimeout(showSlides, 2000); // Change image every 2 seconds
+        }
+        </script>
+    
+    <script src="JS/script.js"></script>
+
+</body>
+</html>
